@@ -69,18 +69,197 @@ body{
 .links-container a{
   font-size: 20px;
   color: #959ca8;
+  transition: all 0.3s;
+  margin-top: 3px;
 }
 
 .links-container i{
   margin-left: 10px;
 }
 
-
 .links-container button{
   cursor: pointer;
   border: 2px solid #1f2937;
   transition: all 0.3s;
+  padding: 15px 15px 20px 15px;
 }
+
 .links-container button:hover{
   background-color: #1f2937;
+}
+
+.links-container a:hover{
+  color: white;
+}
+
+.download-resume i{
+  color: white;
+  font-size: 15px;
+}
+
+.download-resume span{
+  color: white;
+  font-size: 15px;
+}
+
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6%;
+}
+
+
+.work-education{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2937;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+}
+.work-education button{
+  width: 50%;
+  cursor: pointer;
+}
+.tab-content{
+  margin-top: 30px;
+  border: 2px solid #1f2937;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+}
+
+.tab-button {
+  background-color: transparent;
+  color: #aaa;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  color: #fff;
+}
+
+.active-tab {
+  background-color: #030712; 
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+
+.experience-list,
+.education-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.tab-content {
+  position: relative;
+}
+
+.tab-content::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #374151;
+  height: 100%;
+}
+
+.experience-list > li,
+.education-list > li {
+  margin-bottom: 2rem;
+  display: flex;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experience-list > li::before,
+.education-list > li::before {
+  content: none;
+}
+
+.experience-list > li::after,
+.education-list > li::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #374151;
+}
+
+.logo-container {
+  margin-right: 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.experience-item-title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.company-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.position {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.dates {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.experience-list li ul,
+.education-list li ul {
+  list-style: disc;
+  margin-top: 0.75rem;
+  padding-left: 1.5rem;
+  color: #fff;
+}
+
+.experience-list li ul li,
+.education-list li ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  padding-left: 0.5rem;
+}
+
+.experience-list li ul li::before,
+.education-list li ul li::before {
+  content: none;
 }
